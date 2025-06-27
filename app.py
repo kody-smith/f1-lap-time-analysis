@@ -256,11 +256,19 @@ fig.add_trace(go.Scatter(
 
 # Layout
 fig.update_layout(
+    legend=dict(
+        title="Drivers",
+        orientation="h",
+        yanchor="top",
+        y=-0.75,
+        xanchor="center",
+        x=0.5
+    ),
     title=f"Lap Times Comparison: {drivers_map[driver_1]} vs {drivers_map[driver_2]}",
     xaxis_title="Lap Number",
     yaxis_title="Lap Duration (seconds)",
     template="plotly_dark",
-    hovermode="x unified"
+    hovermode="x unified",
 )
 
 st.plotly_chart(fig, use_container_width=True)
