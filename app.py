@@ -257,10 +257,9 @@ fig.add_trace(go.Scatter(
 # Layout
 fig.update_layout(
     legend=dict(
-        title="Drivers",
         orientation="h",
         yanchor="top",
-        y=-0.75,
+        y=-0.55,
         xanchor="center",
         x=0.5
     ),
