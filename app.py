@@ -260,14 +260,7 @@ fig.update_layout(
     xaxis_title="Lap Number",
     yaxis_title="Lap Duration (seconds)",
     template="plotly_dark",
-    hovermode="x unified",
-    legend=dict(
-        orientation="h",
-        yanchor="bottom",
-        y=-0.3,
-        xanchor="center",
-        x=0.5
-    )
+    hovermode="x unified"
 )
 
 st.plotly_chart(fig, use_container_width=True)
